@@ -2,11 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Animal } from '../../interfaces';
 
 @Component({
-  selector: 'app-post',
-  templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss']
+  selector: 'app-animal',
+  templateUrl: './animal.component.html',
+  styleUrls: ['./animal.component.scss']
 })
-export class PostComponent implements OnInit {
+export class AnimalComponent implements OnInit {
   @Input() animal: Animal;
 
   constructor() { }

@@ -1,0 +1,394 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "myadfssdfdfsfssdfdfsu1",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 2,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 2,
+      "name": "myau2",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": true
+    },
+    {
+      "id": 3,
+      "name": "myau3",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 4,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": true
+    },
+    {
+      "id": 4,
+      "name": "myau4",
+      "breed": "breed2",
+      "gender": "male",
+      "age": 4,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 5,
+      "name": "myau5",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 6,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 6,
+      "name": "myau6",
+      "breed": "breed1",
+      "gender": "female",
+      "age": 3,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 7,
+      "name": "myau7",
+      "breed": "breed3",
+      "gender": "male",
+      "age": 7,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 8,
+      "name": "myau8",
+      "breed": "breed4",
+      "gender": "male",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 9,
+      "name": "myau9",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 3,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 10,
+      "name": "myau10",
+      "breed": "breed2",
+      "gender": "male",
+      "age": 3,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 11,
+      "name": "myau11",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 2,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 12,
+      "name": "myau12",
+      "breed": "breed1",
+      "gender": "female",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 13,
+      "name": "myau13",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 8,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 14,
+      "name": "myau1",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 2,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 15,
+      "name": "myau2",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 16,
+      "name": "myau3",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 4,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 17,
+      "name": "myau4",
+      "breed": "breed2",
+      "gender": "male",
+      "age": 4,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 18,
+      "name": "myau5",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 6,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 19,
+      "name": "myau6",
+      "breed": "breed1",
+      "gender": "female",
+      "age": 3,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 20,
+      "name": "myau7",
+      "breed": "breed3",
+      "gender": "male",
+      "age": 7,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 21,
+      "name": "myau8",
+      "breed": "breed4",
+      "gender": "male",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 22,
+      "name": "myau9",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 3,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 21,
+      "name": "myau10",
+      "breed": "breed2",
+      "gender": "male",
+      "age": 3,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 22,
+      "name": "myau11",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 2,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 23,
+      "name": "myau12",
+      "breed": "breed1",
+      "gender": "female",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 24,
+      "name": "myau13",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 8,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 25,
+      "name": "myau1",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 2,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 26,
+      "name": "myau2",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 27,
+      "name": "myau3",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 4,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 28,
+      "name": "myau4",
+      "breed": "breed2",
+      "gender": "male",
+      "age": 4,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 29,
+      "name": "myau5",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 6,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 30,
+      "name": "myau6",
+      "breed": "breed1",
+      "gender": "female",
+      "age": 3,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 31,
+      "name": "myau7",
+      "breed": "breed3",
+      "gender": "male",
+      "age": 7,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 32,
+      "name": "myau8",
+      "breed": "breed4",
+      "gender": "male",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 33,
+      "name": "myau9",
+      "breed": "breed3",
+      "gender": "female",
+      "age": 3,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 34,
+      "name": "myau10",
+      "breed": "breed2",
+      "gender": "male",
+      "age": 3,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 35,
+      "name": "myau11",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 2,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 36,
+      "name": "myau12",
+      "breed": "breed1",
+      "gender": "female",
+      "age": 1,
+      "type": "cat",
+      "image": "https://g.petango.com/photos/1686/9cd88f16-722b-455a-a32a-8ee5d612e633.jpg",
+      "isAdopted": false
+    },
+    {
+      "id": 37,
+      "name": "myau13",
+      "breed": "breed1",
+      "gender": "male",
+      "age": 8,
+      "type": "dog",
+      "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
+      "isAdopted": false
+    }
+  ]
+}

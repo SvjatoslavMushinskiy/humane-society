@@ -1,43 +1,44 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Animal } from './interfaces';
 
 @Injectable({ providedIn: 'root' })
 export class AnimalService {
+  data = new Subject<Animal[]>();
+
   constructor(private http: HttpClient) {
   }
 
-/*  create(post: Post): Observable<Post> {
-    return this.http.post(`${ environment.fbDbUrl }/posts.json`, post)
+/*  create(animal: Post): Observable<Post> {
+    return this.http.animal(`${ environment.fbDbUrl }/posts.json`, animal)
       .pipe(map((response: FbCreateResponse) => {
         return {
-          ...post,
+          ...animal,
           id: response.name,
-          date: new Date(post.date)
+          date: new Date(animal.date)
         };
       }));
   }*/
 
-  getAll(): Observable<Animal[]> {
-    return this.http.get<Animal[]>(`http://localhost:3000/animals`);
+  getAll(): void {
+    this.http.get<Animal[]>(`http://localhost:3000/animals`)
+      .subscribe((data: Animal[]) => this.data.next(data));
   }
 
-/*  getById(id: string): Observable<Post> {
-    return this.http.get<Post>(`${environment.fbDbUrl}/posts/${id}.json`)
-      .pipe(map((post: Post) => {
-        return {
-          ...post, id,
-          date: new Date(post.date)
-        };
-      }));
-  }*/
+  getById(id: string): Observable<Animal> {
+    return this.http.get<Animal>(`http://localhost:3000/animals/${id}`);
+  }
+
+  editById(id: number, animal: Animal): Observable<Animal> {
+    return this.http.put<Animal>(`http://localhost:3000/animals/${id}`, animal);
+  }
 /*
   remove(id: string): Observable<void> {
     return this.http.delete<void>(`${ environment.fbDbUrl }/posts/${ id }.json`);
   }
 
-  update(post: Post): Observable<Post> {
-    return this.http.patch<Post>(`${environment.fbDbUrl}/posts/${post.id}.json`, post);
+  update(animal: Post): Observable<Post> {
+    return this.http.patch<Post>(`${environment.fbDbUrl}/posts/${animal.id}.json`, animal);
   }*/
 }

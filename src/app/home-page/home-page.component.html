@@ -1,7 +1,35 @@
-<div class="posts" *ngIf="posts$ | async as posts; else loading">
-  <app-post *ngFor="let post of posts" [post]="post"></app-post>
+<div class="form-control">
+  <input type="text" placeholder="Find Animal..." [(ngModel)]="searchStr">
+
+  <mat-radio-group aria-label="Select an option" name="animalType" ngModel #animalType="ngModel">
+    <mat-radio-button value="dog">Dog</mat-radio-button>
+    <mat-radio-button value="cat">Cat</mat-radio-button>
+    <mat-radio-button value="">All</mat-radio-button>
+  </mat-radio-group>
+
+  <br>
+
+  <mat-radio-group aria-label="Select an gender" name="gender" ngModel #gender="ngModel">
+    <mat-radio-button value="male">Male</mat-radio-button>
+    <mat-radio-button value="female">Female</mat-radio-button>
+    <mat-radio-button value="">All</mat-radio-button>
+  </mat-radio-group>
 </div>
 
+<div class="animals" *ngIf="animals$ | async as animals ; else loading">
+  <app-animal
+    class="item"
+    *ngFor="let animal of animals | searchAnimal:{searchStr: searchStr, type: animalType.value, gender: gender.value, pageIndex: pageIndex, pageSize: pageSize}"
+    [animal]="animal"
+  ></app-animal>
+</div>
+
+<mat-paginator [length]="(animals$ | async)?.length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="[pageSize]"
+                (page)="setNewPage($event)">
+</mat-paginator>
+
 <ng-template #loading>
-  <p class="text-center">Завантажую пости...</p>
+  <p class="text-center">Loading Animals</p>
 </ng-template>

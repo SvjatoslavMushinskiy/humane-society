@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { AnimalService } from '../shared/animal.service';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Animal } from '../shared/interfaces';
 import { switchMap } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-post-page',
-  templateUrl: './post-page.component.html',
-  styleUrls: ['./post-page.component.scss']
+  selector: 'app-animal-page',
+  templateUrl: './animal-page.component.html',
+  styleUrls: ['./animal-page.component.scss']
 })
 export class AnimalPageComponent implements OnInit {
 
-  post$: Observable<Animal>;
+  animal$: Observable<Animal>;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,10 +21,19 @@ export class AnimalPageComponent implements OnInit {
   }
 
   ngOnInit() {
-/*    this.post$ = this.route.params
+    this.animal$ = this.route.params
       .pipe(switchMap((params: Params) => {
-        return this.postService.getById(params['id']);
-      }));*/
+        return this.animalService.getById(params['id']);
+      }));
+  }
+
+  adoptMe(animal: Animal) {
+    this.animalService.editById(animal.id, {
+      ...animal,
+      isAdopted: true
+    }).subscribe((data) => {
+      this.animal$ = of(data); // TODO...
+    });
   }
 
 }

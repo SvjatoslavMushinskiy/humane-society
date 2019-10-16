@@ -1,22 +1,20 @@
-<div *ngIf="post$ | async as post; else loading">
-  <div class="post">
+<div *ngIf="animal$ | async as animal; else loading">
+  <div class="animal">
+    <img src={{animal.image}} alt="animal">
     <div class="header">
-      <h1>{{ post.title }}</h1>
+      <h1>{{ animal.name }}</h1>
 
-      <button routerLink="/" class="btn btn-link">На головну</button>
+      <button routerLink="/" class="btn btn-link">On Main Page</button>
+
+      <button (click)="adoptMe(animal)" [disabled]="animal.isAdopted">Adopt Me!</button>
     </div>
 
-    <div class="info">
-      <strong>{{ post.author }}</strong>
-      <small>{{ post.date | date:'medium':null:'ua' }}</small>
-    </div>
-
-    <div>
-
-    </div>
+    <div class="info"><strong>{{ animal.breed }}</strong></div>
+    <div class="info"><strong>{{ animal.gender }}</strong></div>
+    <div class="info"><strong>{{ animal.age }}</strong></div>
   </div>
 </div>
 
 <ng-template #loading>
-<p class="text-center">Завантажую пост...</p>
+  <p class="text-center">Loading</p>
 </ng-template>

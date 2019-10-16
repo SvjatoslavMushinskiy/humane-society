@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 
-import { PostsService } from '../shared/posts.service';
-import { Post } from '../shared/interfaces';
+import { AnimalService } from '../shared/animal.service';
+import { Animal } from '../shared/interfaces';
 import { Observable } from 'rxjs';
+import { PageEvent } from '@angular/material';
+import { PAGE_SIZE } from './paginator.contstant';
 
 @Component({
   selector: 'app-home-page',
@@ -11,11 +13,21 @@ import { Observable } from 'rxjs';
 })
 
 export class HomePageComponent implements OnInit {
-  posts$: Observable<Post[]>;
+  animals$: Observable<Animal[]>;
+  searchStr = '';
+  pageSize = PAGE_SIZE;
+  pageIndex = 0;
 
-  constructor(private postService: PostsService) { }
+  constructor(private animalService: AnimalService) { }
 
   ngOnInit() {
-    this.posts$ = this.postService.getAll();
+    this.animalService.getAll();
+
+    this.animals$ = this.animalService.data;
   }
+
+  setNewPage(pageEvent: PageEvent) {
+    this.pageIndex = pageEvent.pageIndex;
+  }
+
 }

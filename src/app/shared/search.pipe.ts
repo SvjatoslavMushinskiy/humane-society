@@ -1,17 +1,33 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Post } from '../../shared/interfaces';
+import { Animal } from './interfaces';
 
 @Pipe({
-  name: 'searchPost'
+  name: 'searchAnimal'
 })
 export class SearchPipe implements PipeTransform {
-  transform(posts: Post[], search = ''): Post[] {
-    if (!search.trim()) {
-      return posts;
-    }
+  transform(animals: Animal[], { searchStr = '', type = '', gender = '', pageIndex, pageSize }): Animal[] {
 
-    return posts.filter(post => {
-      return post.title.toLocaleLowerCase().includes(search.toLocaleLowerCase());
-    });
+    return animals
+      .filter(animal => {
+        if (!searchStr.trim()) {
+          return true;
+        }
+        const searchValue = searchStr.toLocaleLowerCase();
+        return animal.name.toLocaleLowerCase().includes(searchValue) ||
+          animal.breed.toLocaleLowerCase().includes(searchValue);
+      })
+      .filter(animal => {
+        if (!type) {
+          return true;
+        }
+        return animal.type === type;
+      })
+      .filter(animal => {
+        if (!gender) {
+          return true;
+        }
+        return animal.gender === gender;
+      })
+      .splice(pageIndex * pageSize, pageSize);
   }
 }
