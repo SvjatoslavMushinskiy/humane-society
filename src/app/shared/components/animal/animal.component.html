@@ -1,0 +1,12 @@
+<div class="card">
+  <img src={{animal.image}} alt="animal">
+  <div class="card-header">
+    <h2>{{animal.name}}</h2>
+  </div>
+
+  <div><small>{{ animal.breed }}</small></div>
+  <div><small>{{ animal.gender }}</small></div>
+  <div><small>{{ animal.age }}</small></div>
+
+  <button [routerLink]="['/animal', animal.id]" class="btn btn-dark">Open</button>
+</div>
