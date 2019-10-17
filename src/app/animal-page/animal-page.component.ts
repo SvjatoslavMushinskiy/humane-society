@@ -15,7 +15,7 @@ import { switchMap } from 'rxjs/operators';
 })
 
 export class AnimalPageComponent implements OnInit {
-  animal$: Observable<Animal>;
+  animal: Animal;
 
   constructor(
     private alert: AlertService,
@@ -26,16 +26,20 @@ export class AnimalPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.animal$ = this.route.params
+    this.route.params
       .pipe(switchMap((params: Params) => {
         return this.animalService.getById(params.id);
-      }));
+      }))
+      .subscribe(data => {
+        this.animal = data;
+        this.cdr.markForCheck();
+      });
   }
 
   public adoptMe(animal: Animal) {
     this.animalService.editById(animal.id, { ...animal, isAdopted: true })
       .subscribe((data) => {
-        this.animal$ = of(data);
+        this.animal = data;
         this.alert.success('Pet was adopted');
         this.cdr.markForCheck();
       });

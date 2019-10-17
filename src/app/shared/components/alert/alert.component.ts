@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 import { AlertService } from '../../services/alert.service';
 import { Subscription } from 'rxjs';
@@ -6,7 +6,8 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.component.html',
-  styleUrls: ['./alert.component.scss']
+  styleUrls: ['./alert.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class AlertComponent implements OnInit, OnDestroy {
@@ -17,16 +18,21 @@ export class AlertComponent implements OnInit, OnDestroy {
 
   aSub: Subscription;
 
-  constructor(private alertService: AlertService) { }
+  constructor(
+    private cdr: ChangeDetectorRef,
+    private alertService: AlertService) {
+  }
 
   ngOnInit(): void {
     this.aSub = this.alertService.alert$.subscribe(alert => {
       this.text = alert.text;
       this.type = alert.type;
+      this.cdr.markForCheck();
 
       const timeout = setTimeout(() => {
         clearTimeout(timeout);
         this.text = '';
+        this.cdr.markForCheck();
       }, this.delay);
     });
   }

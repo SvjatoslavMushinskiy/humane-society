@@ -4,15 +4,15 @@
          (ngModelChange)="changeSearchFilter($event)">
 
   <div class="radio-filter">
-    <mat-radio-group aria-label="Select a pet" (change)="changeAnimalType($event)" [(ngModel)]="petType" [value]="petType">
+    <mat-radio-group aria-label="Select a pet" (change)="changeAnimalType($event)">
       <mat-radio-button value="dog">Dog</mat-radio-button>
       <mat-radio-button value="cat">Cat</mat-radio-button>
-      <mat-radio-button value="">All</mat-radio-button>
+      <mat-radio-button value="" checked>All</mat-radio-button>
     </mat-radio-group>
-    <mat-radio-group aria-label="Select an gender" (change)="changeGender($event)" [(ngModel)]="genderType" [value]="genderType">
+    <mat-radio-group aria-label="Select an gender" (change)="changeGender($event)">
       <mat-radio-button value="Male">Male</mat-radio-button>
       <mat-radio-button value="Female">Female</mat-radio-button>
-      <mat-radio-button value="">All</mat-radio-button>
+      <mat-radio-button value="" checked>All</mat-radio-button>
     </mat-radio-group>
   </div>
 </div>
