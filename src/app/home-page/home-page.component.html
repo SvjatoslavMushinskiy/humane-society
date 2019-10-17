@@ -1,35 +1,42 @@
 <div class="form-control">
-  <input type="text" placeholder="Find Animal..." [(ngModel)]="searchStr">
+  <input type="text" placeholder="Find Animal..."
+         [ngModel]="searchStr"
+         (ngModelChange)="changeSearchFilter($event)">
 
   <div class="radio-filter">
-    <mat-radio-group aria-label="Select an option" name="animalType" ngModel #animalType="ngModel">
+    <mat-radio-group aria-label="Select an option" (change)="changeAnimalType($event)">
       <mat-radio-button value="dog">Dog</mat-radio-button>
       <mat-radio-button value="cat">Cat</mat-radio-button>
       <mat-radio-button value="">All</mat-radio-button>
     </mat-radio-group>
-    <mat-radio-group aria-label="Select an gender" name="gender" ngModel #gender="ngModel">
+    <mat-radio-group aria-label="Select an gender" (change)="changeGender($event)">
       <mat-radio-button value="Male">Male</mat-radio-button>
       <mat-radio-button value="Female">Female</mat-radio-button>
       <mat-radio-button value="">All</mat-radio-button>
     </mat-radio-group>
   </div>
-
 </div>
 
-<div class="animals" *ngIf="animals$ | async as animals ; else loading">
+<div class="animals" *ngIf="(animals$ | async) as animals; else loading">
   <app-animal
     class="item"
-    *ngFor="let animal of animals | searchAnimal:{searchStr: searchStr, type: animalType.value, gender: gender.value, pageIndex: pageIndex, pageSize: pageSize}"
+    *ngFor="let animal of animals |
+    searchAnimal:{searchStr: searchStr, type: animalType, gender: gender} |
+    splice:{pageIndex: pageIndex, pageSize: pageSize}"
     [animal]="animal"
   ></app-animal>
 </div>
 
-<mat-paginator [length]="(animals$ | async)?.length"
-               [pageSize]="pageSize"
-               [pageSizeOptions]="[pageSize]"
-                (page)="setNewPage($event)">
+<mat-paginator
+  [length]="((animals$ | async) | searchAnimal:{searchStr: searchStr, type: animalType, gender: gender})?.length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[pageSize]"
+  [pageIndex]="pageIndex"
+  (page)="setNewPage($event)">
 </mat-paginator>
 
 <ng-template #loading>
   <p class="text-center">Loading Animals</p>
 </ng-template>
+
+

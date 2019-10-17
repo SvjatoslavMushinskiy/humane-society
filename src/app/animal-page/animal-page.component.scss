@@ -1,18 +1,19 @@
-.animal {
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  h1 {
-    margin-bottom: .5rem;
-  }
-
-  .info {
-    strong {
-      margin-right: 1rem;
+.animal-description {
+  display: flex;
+  max-width: 768px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .col-1 {
+    flex-basis: 100%;
+    margin: 10px;
+    img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
     }
+  }
+  .description {
+    margin: 15px 0;
   }
 }

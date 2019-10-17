@@ -12,6 +12,9 @@ import { AnimalComponent } from './shared/components/animal/animal.component';
 import { SearchPipe } from './shared/search.pipe';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule, MatRadioModule } from '@angular/material';
+import { AlertComponent } from './shared/components/alert/alert.component';
+import { AlertService } from './shared/services/alert.service';
+import { SplicePipe } from './shared/splice.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { MatPaginatorModule, MatRadioModule } from '@angular/material';
     HomePageComponent,
     AnimalPageComponent,
     AnimalComponent,
-    SearchPipe
+    SearchPipe,
+    SplicePipe,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,7 @@ import { MatPaginatorModule, MatRadioModule } from '@angular/material';
     MatRadioModule,
     MatPaginatorModule
   ],
-  providers: [],
+  providers: [AlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

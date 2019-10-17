@@ -5,7 +5,10 @@ import { Animal } from './interfaces';
   name: 'searchAnimal'
 })
 export class SearchPipe implements PipeTransform {
-  transform(animals: Animal[], { searchStr = '', type = '', gender = '', pageIndex, pageSize }): Animal[] {
+  transform(animals: Animal[], { searchStr = '', type = '', gender = '' }): Animal[] {
+    if (!animals) {
+      return [];
+    }
 
     return animals
       .filter(animal => {
@@ -27,7 +30,6 @@ export class SearchPipe implements PipeTransform {
           return true;
         }
         return animal.gender === gender;
-      })
-      .splice(pageIndex * pageSize, pageSize);
+      });
   }
 }

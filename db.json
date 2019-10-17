@@ -8,7 +8,7 @@
       "age": "1 years 9 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
-      "isAdopted": false
+      "isAdopted": true
     },
     {
       "id": 2,
@@ -58,7 +58,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 7,
@@ -79,7 +79,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 9,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -97,7 +98,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 11,
@@ -107,7 +108,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 12,
@@ -118,7 +119,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 13,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -126,7 +128,7 @@
       "age": "1 years 9 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
-      "isAdopted": false
+      "isAdopted": true
     },
     {
       "id": 14,
@@ -136,7 +138,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 15,
@@ -146,7 +148,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 16,
@@ -157,7 +159,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 17,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -175,7 +178,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 19,
@@ -185,7 +188,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 20,
@@ -196,7 +199,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 21,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -214,7 +218,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 23,
@@ -224,7 +228,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 24,
@@ -235,7 +239,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 25,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -253,7 +258,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 27,
@@ -263,7 +268,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 28,
@@ -274,7 +279,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 29,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -292,7 +298,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 31,
@@ -302,7 +308,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 32,
@@ -313,7 +319,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 33,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -331,7 +338,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 35,
@@ -341,7 +348,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 36,
@@ -352,7 +359,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 37,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -370,7 +378,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 39,
@@ -380,7 +388,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 40,
@@ -391,7 +399,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 41,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -409,7 +418,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 43,
@@ -419,7 +428,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 44,
@@ -430,7 +439,8 @@
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/caaa6852-1ac7-4d4e-ad95-a8a4cd783af2.jpg",
       "isAdopted": false
-    },    {
+    },
+    {
       "id": 45,
       "name": "Benson",
       "breed": "Shepherd, Mix",
@@ -448,7 +458,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 47,
@@ -458,7 +468,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 48,

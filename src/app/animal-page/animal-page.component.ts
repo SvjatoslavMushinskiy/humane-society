@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { AnimalService } from '../shared/animal.service';
+import { AnimalService } from '../shared/services/animal.service';
 import { Observable, of } from 'rxjs';
 import { Animal } from '../shared/interfaces';
 import { switchMap } from 'rxjs/operators';
+import { AlertService } from '../shared/services/alert.service';
 
 @Component({
   selector: 'app-animal-page',
@@ -15,6 +16,7 @@ export class AnimalPageComponent implements OnInit {
   animal$: Observable<Animal>;
 
   constructor(
+    private alert: AlertService,
     private route: ActivatedRoute,
     private animalService: AnimalService
   ) {
@@ -32,8 +34,10 @@ export class AnimalPageComponent implements OnInit {
       ...animal,
       isAdopted: true
     }).subscribe((data) => {
+      this.alert.success('Pet was adopted');
       this.animal$ = of(data); // TODO...
     });
   }
+
 
 }
