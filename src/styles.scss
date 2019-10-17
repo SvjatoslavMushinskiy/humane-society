@@ -230,6 +230,7 @@ textarea {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input[type='submit'],
@@ -303,14 +304,17 @@ table th {
 .fixed-header-footer {
   display: flex;
   flex-direction: column;
+
   .col-header {
     flex: 0 0 auto;
   }
+
   .col-content {
     flex: 1 1 auto;
     position: relative;
     overflow-y: auto;
   }
+
   .col-footer {
     flex: 0 0 auto;
   }

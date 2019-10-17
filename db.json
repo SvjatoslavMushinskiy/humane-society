@@ -8,7 +8,7 @@
       "age": "1 years 9 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "age": "12 years 11 months",
       "type": "cat",
       "image": "https://g.petango.com/photos/1686/ea9b77f5-293e-4fcb-aa0b-115e34fe8d0f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 4,
@@ -68,7 +68,7 @@
       "age": "2 years 1 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/7c8e3a32-43cc-465c-af44-6a37c800cc8c.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 8,
@@ -128,7 +128,7 @@
       "age": "1 years 9 months",
       "type": "dog",
       "image": "https://g.petango.com/photos/1686/d5f41f7e-d176-4883-895f-5813a7444e8f.jpg",
-      "isAdopted": true
+      "isAdopted": false
     },
     {
       "id": 14,

@@ -1,28 +1,30 @@
-.animals {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -10px;
-  width: calc(100% + 20px);
-  .item {
-    width: calc((100% / 3) - 20px);
-    margin: 0 10px 20px 10px;
-    @media(max-width: 768px) {
-      width: calc((100% / 2) - 20px);
-    }
-
-  }
-}
-
 ::ng-deep {
   .radio-filter {
     display: flex;
     justify-content: space-between;
     margin: 15px 0 25px;
+
     .mat-radio-button {
       margin-right: 15px;
+
       &:last-child {
         margin-right: 0;
       }
+    }
+  }
+}
+
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  width: calc(100% + 20px);
+
+  .item {
+    width: calc((100% / 3) - 20px);
+    margin: 0 10px 20px 10px;
+    @media(max-width: 768px) {
+      width: calc((100% / 2) - 20px);
     }
   }
 }

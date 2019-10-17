@@ -16,10 +16,10 @@ export class AnimalService {
   }
 
   getById(id: string): Observable<Animal> {
-    return this.http.get<Animal>(`http://localhost:3000/animals/${id}`);
+    return this.http.get<Animal>(`http://localhost:3000/animals/${ id }`);
   }
 
   editById(id: number, animal: Animal): Observable<Animal> {
-    return this.http.put<Animal>(`http://localhost:3000/animals/${id}`, animal);
+    return this.http.put<Animal>(`http://localhost:3000/animals/${ id }`, animal);
   }
 }
